@@ -4,10 +4,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class HelloWorldController {
+@RequestMapping(value = "/")
+public class HomeController {
 
-    @RequestMapping("/welcome.html")
+    @RequestMapping({"/", "/home"})
     public String getContent() {
-        return "Hello world";
+        return "first-page";
     }
+
 }

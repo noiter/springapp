@@ -6,13 +6,13 @@ import org.junit.Test;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
-public class HelloWorldControllerTest {
+public class HomeControllerTest {
 
-    private HelloWorldController controller;
+    private HomeController controller;
 
     @Before
     public void setUp() {
-        controller = new HelloWorldController();
+        controller = new HomeController();
     }
 
     @Test
